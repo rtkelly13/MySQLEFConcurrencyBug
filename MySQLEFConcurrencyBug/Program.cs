@@ -128,6 +128,7 @@ public static class Program
         context.Database.SetCommandTimeout(120);
 
         // auto transaction behaviour
-        context.Database.AutoTransactionBehavior = AutoTransactionBehavior.WhenNeeded;
+        //context.Database.AutoTransactionBehavior = AutoTransactionBehavior.WhenNeeded;
+        context.Database.AutoTransactionsEnabled = false;
     }
 }
